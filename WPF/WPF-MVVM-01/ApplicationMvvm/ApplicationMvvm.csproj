@@ -90,25 +90,25 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{b8b669da-c6cc-46a9-8e76-2eb385f66d8a}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared.Interfaces\Shared.Interfaces.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Interfaces\Shared.Interfaces.csproj">
       <Project>{52E00AD1-01B9-4DC5-B77B-9FC44967A5BA}</Project>
       <Name>Shared.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Shared.Ioc\Shared.Ioc.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Ioc\Shared.Ioc.csproj">
       <Project>{E569692C-C6D1-4683-A154-A7D4DAADF898}</Project>
       <Name>Shared.Ioc</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Shared.Models\Shared.Models.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Models\Shared.Models.csproj">
       <Project>{b9252aaf-409a-4003-b780-3e800e00e330}</Project>
       <Name>Shared.Models</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Shared.Wpf.Ioc\Shared.Wpf.Ioc.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Wpf.Ioc\Shared.Wpf.Ioc.csproj">
       <Project>{3e4940c0-9e80-404b-85e9-61f7bef07611}</Project>
       <Name>Shared.Wpf.Ioc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{b8b669da-c6cc-46a9-8e76-2eb385f66d8a}</Project>
+      <Name>Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\ViewModels\ViewModels.csproj">
       <Project>{1ddb572b-21c4-4649-9714-0ae102e67f8c}</Project>

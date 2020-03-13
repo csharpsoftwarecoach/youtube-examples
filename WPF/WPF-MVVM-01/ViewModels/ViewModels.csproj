@@ -46,17 +46,17 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{B8B669DA-C6CC-46A9-8E76-2EB385F66D8A}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared.Interfaces\Shared.Interfaces.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Interfaces\Shared.Interfaces.csproj">
       <Project>{52E00AD1-01B9-4DC5-B77B-9FC44967A5BA}</Project>
       <Name>Shared.Interfaces</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Shared.Models\Shared.Models.csproj">
+    <ProjectReference Include="..\..\Shared\Shared.Models\Shared.Models.csproj">
       <Project>{B9252AAF-409A-4003-B780-3E800E00E330}</Project>
       <Name>Shared.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Models\Models.csproj">
+      <Project>{B8B669DA-C6CC-46A9-8E76-2EB385F66D8A}</Project>
+      <Name>Models</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

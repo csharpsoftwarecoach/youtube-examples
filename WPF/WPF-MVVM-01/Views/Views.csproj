@@ -92,6 +92,10 @@
       <Project>{3e4940c0-9e80-404b-85e9-61f7bef07611}</Project>
       <Name>Shared.Wpf.Ioc</Name>
     </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{1ddb572b-21c4-4649-9714-0ae102e67f8c}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,8 +8,8 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <StackPanel Orientation="Vertical">
-        <Label Content="Bitte geben Sie Ihren Namen ein:"  VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <Label Content="Name"  VerticalAlignment="Center" HorizontalAlignment="Left"  />
+        <Label Content="{Binding PrivatePerson.Name, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" HorizontalAlignment="Left" />
         <TextBox Text="{Binding PrivatePerson.Name, UpdateSourceTrigger=PropertyChanged}" />
-        <Button Content="Start" Command="{Binding StartCommand}" />
     </StackPanel>
 </Window>

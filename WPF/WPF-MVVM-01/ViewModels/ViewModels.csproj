@@ -50,7 +50,7 @@
       <Name>Models</Name>
     </ProjectReference>
     <ProjectReference Include="..\Shared.Interfaces\Shared.Interfaces.csproj">
-      <Project>{52e00ad1-01b9-4dc5-b77b-9fc44967a5ba}</Project>
+      <Project>{52E00AD1-01B9-4DC5-B77B-9FC44967A5BA}</Project>
       <Name>Shared.Interfaces</Name>
     </ProjectReference>
     <ProjectReference Include="..\Shared.Models\Shared.Models.csproj">

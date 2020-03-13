@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared.Models", "Shared.Models\Shared.Models.csproj", "{B9252AAF-409A-4003-B780-3E800E00E330}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "[Shared]", "[Shared]", "{F63F605E-EC08-4D9C-B63E-B77DD3AD3E22}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application Mvvm teilweise entkoppelt", "Application Mvvm teilweise entkoppelt", "{6D190457-9531-4044-B951-B1C6E99709B0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApplicationMvvmAlmostDecoupled", "ApplicationMvvmAlmostDecoupled\ApplicationMvvmAlmostDecoupled.csproj", "{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B9252AAF-409A-4003-B780-3E800E00E330}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9252AAF-409A-4003-B780-3E800E00E330}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9252AAF-409A-4003-B780-3E800E00E330}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9252AAF-409A-4003-B780-3E800E00E330}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B9252AAF-409A-4003-B780-3E800E00E330} = {F63F605E-EC08-4D9C-B63E-B77DD3AD3E22}
+		{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0} = {6D190457-9531-4044-B951-B1C6E99709B0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {86d8304e-29e0-40c6-b17a-16f7b5ba1fb3}
+	EndGlobalSection
+EndGlobal

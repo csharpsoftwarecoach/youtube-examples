@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{491EDD5F-4D2E-42C4-B3B8-0AFA345E39B0}</ProjectGuid>
+    <ProjectGuid>{5AE07F18-0CE2-4CC6-BF82-BA93EBFE49A0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>ApplicationProject</RootNamespace>
-    <AssemblyName>ApplicationProject</AssemblyName>
+    <RootNamespace>ApplicationMvvmAlmostDecoupled</RootNamespace>
+    <AssemblyName>ApplicationMvvmAlmostDecoupled</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,9 +34,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject>ApplicationProject.App</StartupObject>
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -58,8 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Models\Person.cs" />
+    <Compile Include="ViewModels\MainWindowViewModel.cs" />
+    <Page Include="Views\MainWindowView.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Views\MainWindowView.xaml.cs">
+      <DependentUpon>MainWindowView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -90,33 +97,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Models\Models.csproj">
-      <Project>{b8b669da-c6cc-46a9-8e76-2eb385f66d8a}</Project>
-      <Name>Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared.Interfaces\Shared.Interfaces.csproj">
-      <Project>{52E00AD1-01B9-4DC5-B77B-9FC44967A5BA}</Project>
-      <Name>Shared.Interfaces</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared.Ioc\Shared.Ioc.csproj">
-      <Project>{E569692C-C6D1-4683-A154-A7D4DAADF898}</Project>
-      <Name>Shared.Ioc</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Shared.Models\Shared.Models.csproj">
-      <Project>{b9252aaf-409a-4003-b780-3e800e00e330}</Project>
+      <Project>{B9252AAF-409A-4003-B780-3E800E00E330}</Project>
       <Name>Shared.Models</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Shared.Wpf.Ioc\Shared.Wpf.Ioc.csproj">
-      <Project>{3e4940c0-9e80-404b-85e9-61f7bef07611}</Project>
-      <Name>Shared.Wpf.Ioc</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
-      <Project>{1ddb572b-21c4-4649-9714-0ae102e67f8c}</Project>
-      <Name>ViewModels</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Views\Views.csproj">
-      <Project>{2cdb493d-97cd-421e-9485-a02c60439927}</Project>
-      <Name>Views</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

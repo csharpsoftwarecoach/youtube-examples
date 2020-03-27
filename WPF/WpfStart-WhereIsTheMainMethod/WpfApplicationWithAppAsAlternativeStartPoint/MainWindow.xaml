@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplicationWithAppAsAlternativeStartPoint.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationWithAppAsAlternativeStartPoint"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Dieses Projekt verwendet zwar eine App.xaml, aber das MainWindow wird nicht mehr in der Xaml-Datei über die Property StartupUri angegeben," />
+        <Label Content="sondern in der Code-Behind-Datei App.xaml.cs, dort wird das MainWindow der App-Klasse instanziiert." />
+        <Label Content="" />
+        <Label Content="Wichtig ist folgender Punkt:" />
+        <Label Content="  - Damit eine WPF-Anwendung korrekt laufen kann, braucht sie ein Application-Objekt (das passiert hier über die App.xaml - sie leitet sich von der Application-Klasse ab)." />
+        <Label Content="" />
+        <Label Content="Hinweis:" />
+        <Label Content="Diese Schritte werden auch bei einem frisch angelegten WPF-Projekt ausgeführt (allerdings im Hintergrund)." />
+    </StackPanel>
+</Window>

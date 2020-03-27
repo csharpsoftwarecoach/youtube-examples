@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "WpfApplicationWithAppAsAlternativeStartPoint": {
+      "commandName": "Project",
+      "commandLineArgs": "SilentMode admin mypassword"
+    }
+  }
+}

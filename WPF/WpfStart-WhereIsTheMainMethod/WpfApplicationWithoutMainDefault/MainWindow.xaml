@@ -1,0 +1,13 @@
+﻿<Window x:Class="WpfApplicationWithoutMainDefault.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationWithoutMainDefault"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Standard-WPF-Projekt mit der App.xaml als Einstiegspunkt und das MainWindow wird automatisch instanziiert (Main-Methode wird nicht als Einstiegspunkt verwendet)." />
+        <Label Content="Das MainWindow wird in der App.xaml (in der Xaml-Datei) über die Eigenschaft StartupUri festgelegt." />
+    </StackPanel>
+</Window>

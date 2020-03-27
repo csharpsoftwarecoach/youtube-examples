@@ -1,0 +1,19 @@
+﻿<Window x:Class="WpfApplicationWithMain.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApplicationWithMain"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Label Content="Dieses Projekt verwendet keine App.xaml. In der Klasse Programm wird die Main-Methode wie gewohnt festgelegt." />
+        <Label Content="" />
+        <Label Content="Wichtig sind folgende Punkte:" />
+        <Label Content="  - Die Main-Methode MUSS als STAThread markiert sein (Single Thread Appartment: WPF kann nur als )" />
+        <Label Content="  - Damit eine WPF-Anwendung korrekt laufen kann, braucht sie ein Application-Objekt, über die Run-Methode kann das MainWindow instanziiert werden." />
+        <Label Content="" />
+        <Label Content="Hinweis:" />
+        <Label Content="Diese Schritte werden auch bei einem frisch angelegten WPF-Projekt ohne Main-Methode ausgeführt (allerdings im Hintergrund)." />
+    </StackPanel>
+</Window>

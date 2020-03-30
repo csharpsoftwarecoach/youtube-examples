@@ -3,11 +3,15 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WpfMvvmIntroduction.Views"
+        xmlns:local="clr-namespace:WpfMvvmIntroduction.Views" xmlns:viewmodels="clr-namespace:WpfMvvmIntroduction.ViewModels;assembly=WpfMvvmIntroduction.ViewModels"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
         Title="MainWindowView" Height="450" Width="800">
-    <Grid>
+    <Window.DataContext>
+        <viewmodels:MainWindowViewModel/> 
+    </Window.DataContext>
+    <StackPanel>
         <Label Content="{Binding Name}" />
-    </Grid>
+        <Button Content="Start" Command="{Binding StartCommand}" />
+    </StackPanel>
 </Window>

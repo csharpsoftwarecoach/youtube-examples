@@ -1,5 +1,4 @@
 ﻿using System.Windows;
-using WpfMvvmIntroduction.ViewModels;
 
 namespace WpfMvvmIntroduction.Views
 {
@@ -11,8 +10,6 @@ namespace WpfMvvmIntroduction.Views
         public MainWindowView()
         {
             InitializeComponent();
-
-            DataContext = new MainWindowViewModel();
         }
     }
 }

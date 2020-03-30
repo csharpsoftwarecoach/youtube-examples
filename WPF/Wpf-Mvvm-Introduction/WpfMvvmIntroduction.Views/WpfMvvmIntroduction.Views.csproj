@@ -80,6 +80,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.Presentation.Model\Infrastructure.Presentation.Model.csproj">
+      <Project>{ae383503-0dc4-44a5-9fa4-b8721b8b64ad}</Project>
+      <Name>Infrastructure.Presentation.Model</Name>
+    </ProjectReference>
     <ProjectReference Include="..\WpfMvvmIntroduction.ViewModels\WpfMvvmIntroduction.ViewModels.csproj">
       <Project>{59c64237-71b1-4a0c-aa19-f56b69c185f8}</Project>
       <Name>WpfMvvmIntroduction.ViewModels</Name>

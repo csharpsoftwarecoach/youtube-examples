@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29926.136
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Wpf-Calculator", "Wpf-Calculator\Wpf-Calculator.csproj", "{699A3345-0C58-459C-8397-3E4B89573D71}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Model", "Model\Model.csproj", "{54005B57-42D1-4B59-A3F8-D3132151B9F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ViewModels", "ViewModels\ViewModels.csproj", "{9BC55B70-B032-4B06-8852-624F1B320DA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Views", "Views\Views.csproj", "{0D8D46F1-DC21-4EB1-8950-2AAF1EC83627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Services", "Calculator.Services\Calculator.Services.csproj", "{1FA9BBA5-B0E2-4300-AC06-BECF6C797025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Services.Abstractions", "Calculator.Services.Abstractions\Calculator.Services.Abstractions.csproj", "{76E9ED86-4E1B-49CB-95E2-CB783192AE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculator.Tests", "Calculator.Tests\Calculator.Tests.csproj", "{2DBA2802-C9FF-48BA-BDCB-BAD0DBE1D841}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{699A3345-0C58-459C-8397-3E4B89573D71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{699A3345-0C58-459C-8397-3E4B89573D71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{699A3345-0C58-459C-8397-3E4B89573D71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{699A3345-0C58-459C-8397-3E4B89573D71}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54005B57-42D1-4B59-A3F8-D3132151B9F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54005B57-42D1-4B59-A3F8-D3132151B9F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54005B57-42D1-4B59-A3F8-D3132151B9F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54005B57-42D1-4B59-A3F8-D3132151B9F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BC55B70-B032-4B06-8852-624F1B320DA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BC55B70-B032-4B06-8852-624F1B320DA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BC55B70-B032-4B06-8852-624F1B320DA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BC55B70-B032-4B06-8852-624F1B320DA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D8D46F1-DC21-4EB1-8950-2AAF1EC83627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D8D46F1-DC21-4EB1-8950-2AAF1EC83627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D8D46F1-DC21-4EB1-8950-2AAF1EC83627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D8D46F1-DC21-4EB1-8950-2AAF1EC83627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FA9BBA5-B0E2-4300-AC06-BECF6C797025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FA9BBA5-B0E2-4300-AC06-BECF6C797025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FA9BBA5-B0E2-4300-AC06-BECF6C797025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FA9BBA5-B0E2-4300-AC06-BECF6C797025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76E9ED86-4E1B-49CB-95E2-CB783192AE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76E9ED86-4E1B-49CB-95E2-CB783192AE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76E9ED86-4E1B-49CB-95E2-CB783192AE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76E9ED86-4E1B-49CB-95E2-CB783192AE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBA2802-C9FF-48BA-BDCB-BAD0DBE1D841}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBA2802-C9FF-48BA-BDCB-BAD0DBE1D841}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBA2802-C9FF-48BA-BDCB-BAD0DBE1D841}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBA2802-C9FF-48BA-BDCB-BAD0DBE1D841}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {172A704D-54DD-409B-9728-949FFBC38ADD}
+	EndGlobalSection
+EndGlobal

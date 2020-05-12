@@ -5,8 +5,66 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         WindowStartupLocation="CenterScreen"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="Rechner" Height="350" Width="200">
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="40" />
+            <ColumnDefinition Width="2" />
+            <ColumnDefinition Width="40" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="4" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="40" />
+            <RowDefinition Height="2" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Column="0" Grid.ColumnSpan="7" Grid.Row="2" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <TextBox  />
+        </Grid>
         
+        <Button Grid.Column="0" Grid.Row="4" Content="CE" />
+        <Button Grid.Column="2" Grid.Row="4" Content="C" />
+        <Button Grid.Column="4" Grid.Row="4" Content="Back" />
+        <Button Grid.Column="6" Grid.Row="4" Content="/" />
+        
+        <Button Grid.Column="0" Grid.Row="6" Content="7" />
+        <Button Grid.Column="2" Grid.Row="6" Content="8" />
+        <Button Grid.Column="4" Grid.Row="6" Content="9" />
+        <Button Grid.Column="6" Grid.Row="6" Content="*" />
+
+        <Button Grid.Column="0" Grid.Row="8" Content="4" />
+        <Button Grid.Column="2" Grid.Row="8" Content="5" />
+        <Button Grid.Column="4" Grid.Row="8" Content="6" />
+        <Button Grid.Column="6" Grid.Row="8" Content="-" />
+
+        <Button Grid.Column="0" Grid.Row="10" Content="1" />
+        <Button Grid.Column="2" Grid.Row="10" Content="2" />
+        <Button Grid.Column="4" Grid.Row="10" Content="3" />
+        <Button Grid.Column="6" Grid.Row="10" Content="+" />
+
+        <Button Grid.Column="0" Grid.Row="12" Content="+/-" />
+        <Button Grid.Column="2" Grid.Row="12" Content="0" />
+        <Button Grid.Column="4" Grid.Row="12" Content="," />
+        <Button Grid.Column="6" Grid.Row="12" Content="=" />
     </Grid>
 </Window>

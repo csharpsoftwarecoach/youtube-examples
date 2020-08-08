@@ -1,0 +1,39 @@
+﻿<Window x:Class="Was_ist_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Was ist WPF?" 
+        WindowStartupLocation="CenterScreen"
+        Height="450" 
+        Width="800">
+    <DockPanel LastChildFill="True">
+        <ListBox x:Name="Personen" DockPanel.Dock="Left" ItemsSource="{Binding Personen, UpdateSourceTrigger=PropertyChanged}" Width="200" SelectedIndex="0">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="{Binding Path=Nachname}" Width="90" />
+                        <Label Content="{Binding Path=Vorname}" Width="80" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem Content="Eingeloggt: Reinhold, Andreas" />
+            <StatusBarItem Content="{Binding Source={x:Static sys:DateTime.Now}, StringFormat=dd/MM/yyyy}" HorizontalAlignment="Right" />
+        </StatusBar>
+        <GroupBox DockPanel.Dock="Right" Header="Kontakte">
+            <StackPanel Orientation="Vertical">
+                <TextBlock Text="Name" />
+                <TextBox Text="{Binding Path=SelectedItem.Nachname, ElementName=Personen}" Width="120" HorizontalAlignment="Left" />
+                <TextBlock Text="Vorname" />
+                <TextBox Text="{Binding Path=SelectedItem.Vorname, ElementName=Personen}" Width="120" HorizontalAlignment="Left" />
+                <TextBlock Height="20" />
+                <Button Content="Speichern" Width="120"  HorizontalAlignment="Left"/>
+            </StackPanel>
+        </GroupBox>
+    </DockPanel>
+</Window>

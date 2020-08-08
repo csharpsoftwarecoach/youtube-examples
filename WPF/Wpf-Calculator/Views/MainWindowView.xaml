@@ -66,5 +66,6 @@
         <Button Grid.Column="2" Grid.Row="12" Content="0" />
         <Button Grid.Column="4" Grid.Row="12" Content="," />
         <Button Grid.Column="6" Grid.Row="12" Content="=" />
+        <Button Grid.Column="6" Grid.Row="12" Content="=" />
     </Grid>
 </Window>

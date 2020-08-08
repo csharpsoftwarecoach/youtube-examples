@@ -10,7 +10,7 @@
         <Label Content="Dieses Projekt verwendet keine App.xaml. In der Klasse Programm wird die Main-Methode wie gewohnt festgelegt." />
         <Label Content="" />
         <Label Content="Wichtig sind folgende Punkte:" />
-        <Label Content="  - Die Main-Methode MUSS als STAThread markiert sein (Single Thread Appartment: WPF kann nur als )" />
+        <Label Content="  - Die Main-Methode MUSS als STAThread markiert sein (Single Thread Appartment)" />
         <Label Content="  - Damit eine WPF-Anwendung korrekt laufen kann, braucht sie ein Application-Objekt, über die Run-Methode kann das MainWindow instanziiert werden." />
         <Label Content="" />
         <Label Content="Hinweis:" />

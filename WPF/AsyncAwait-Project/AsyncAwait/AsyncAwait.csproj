@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{95A9A781-3A6C-406A-BE6D-75E74E261D2A}</ProjectGuid>
+    <ProjectGuid>{7BF04EA2-98A6-41B6-B2C6-5C1BF5DF93CA}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>Adressverwaltung_Ohne_MVVM</RootNamespace>
-    <AssemblyName>Adressverwaltung-Ohne-MVVM</AssemblyName>
+    <RootNamespace>AsyncAwait</RootNamespace>
+    <AssemblyName>AsyncAwait</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -34,6 +34,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>AsyncAwait.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -51,25 +54,7 @@
     <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
-    <ApplicationDefinition Include="App.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </ApplicationDefinition>
-    <Page Include="MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
-    </Page>
-    <Compile Include="Adresse.cs" />
-    <Compile Include="App.xaml.cs">
-      <DependentUpon>App.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -94,6 +79,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Infrastructure.ViewModel\Infrastructure.ViewModel.csproj">
+      <Project>{adf25547-e796-4830-afbd-29f17c6519b4}</Project>
+      <Name>Infrastructure.ViewModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{26e2aede-6664-43b9-b5d2-f64c6b15ae2d}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ViewModels\ViewModels.csproj">
+      <Project>{b8f80faa-6016-4b25-ad32-fd394b3f8f87}</Project>
+      <Name>ViewModels</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Views\Views.csproj">
+      <Project>{aed88f79-4678-4c59-ab8d-1d2db26e0b48}</Project>
+      <Name>Views</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

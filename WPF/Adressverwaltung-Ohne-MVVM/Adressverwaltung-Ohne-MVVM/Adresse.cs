@@ -5,7 +5,7 @@ namespace Adressverwaltung_Ohne_MVVM
     /// <summary>
     /// Adresse mit den entsprechenden Properties (Eigenschaften)
     /// </summary>
-    public class AdresseEntity
+    public class Adresse
     {
         public string Vorname { get; set; }
 

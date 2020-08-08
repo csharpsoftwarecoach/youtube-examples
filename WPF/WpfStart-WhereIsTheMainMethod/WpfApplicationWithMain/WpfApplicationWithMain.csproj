@@ -4,7 +4,7 @@
     <OutputType>WinExe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
-    <StartupObject>WpfApplicationWithMain.Programm</StartupObject>
+    <StartupObject>WpfApplicationWithMain.Program</StartupObject>
   </PropertyGroup>
 
 </Project>

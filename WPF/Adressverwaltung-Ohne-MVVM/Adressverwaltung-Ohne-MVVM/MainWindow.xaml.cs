@@ -27,7 +27,7 @@ namespace Adressverwaltung_Ohne_MVVM
 
 
             // Lade die ersten Adressen vom Programm aus
-            var adresse = new AdresseEntity();
+            var adresse = new Adresse();
             adresse.Vorname = "Andrea";
             adresse.Nachname = "Huber";
             adresse.GeborenAm = Convert.ToDateTime("20.09.1989");
@@ -41,7 +41,7 @@ namespace Adressverwaltung_Ohne_MVVM
 
 
 
-            adresse = new AdresseEntity();
+            adresse = new Adresse();
             adresse.Vorname = "Bernd";
             adresse.Nachname = "Kemnitz";
             adresse.GeborenAm = Convert.ToDateTime("01.03.2001");
@@ -116,7 +116,7 @@ namespace Adressverwaltung_Ohne_MVVM
             }
 
 
-            var adresse = new AdresseEntity();
+            var adresse = new Adresse();
             adresse.Vorname = Vorname.Text;
             adresse.Nachname = Nachname.Text;
             adresse.GeborenAm = Convert.ToDateTime(GeborenAm.Text);
@@ -231,11 +231,11 @@ namespace Adressverwaltung_Ohne_MVVM
                 return;
             }
 
-            var adresse = new AdresseEntity();
+            var adresse = new Adresse();
 
             if(AdressListBox.SelectedItem != null)
             {
-                adresse = (AdresseEntity)AdressListBox.SelectedItem;
+                adresse = (Adresse)AdressListBox.SelectedItem;
             }
 
             adresse.Vorname = Vorname.Text;
@@ -276,7 +276,7 @@ namespace Adressverwaltung_Ohne_MVVM
             if (e.AddedItems.Count == 0)
                 return;
 
-            var adresse = (AdresseEntity)e.AddedItems[0];
+            var adresse = (Adresse)e.AddedItems[0];
 
             Vorname.Text = adresse.Vorname;
             Nachname.Text = adresse.Nachname;
@@ -319,7 +319,7 @@ namespace Adressverwaltung_Ohne_MVVM
                         // Die Datenzeile wird in ein Array aufgeteilt, das Trennzeichen ist: ;
                         var values = line.Split(';');
 
-                        var adresse = new AdresseEntity();
+                        var adresse = new Adresse();
 
                         adresse.Vorname = values[0];
                         adresse.Nachname = values[1];
@@ -359,7 +359,7 @@ namespace Adressverwaltung_Ohne_MVVM
             {
                 var csvDaten = new StringBuilder();
 
-                foreach (var adresse in AdressListBox.Items.Cast<AdresseEntity>())
+                foreach (var adresse in AdressListBox.Items.Cast<Adresse>())
                 {
                     var newLine = string.Format("{0};{1};{2};{3};{4};{5};{6};{7};{8};{9}", 
                                     adresse.Vorname, 
